@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Yeelight LED Console</title>
+        <link href="semantic-ui-css/semantic.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/index.css" rel="stylesheet"/>
+        <link href="css/weather-icons.min.css" rel="stylesheet"/>
+        <script src="js/jquery-3.4.0.min.js"></script>
+        <script src="semantic-ui-css/semantic.min.js"></script>
+        <script src="js/Collection.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/constants.js"></script>
+        <script src="js/temperature.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+<body>
+<div id="title-bar">
+    <img src="128.png"/>
+
+    <div id="title" style="-webkit-flex: 1">Ambient Weather App</div>
+    <button id="close" href="#">&times;</button>
+</div>
+<div id="background-container">
+    <div class="ui vertical mini menu" id="button-grouping">
+        <a class="item" id="current-weather">Current</a>
+        <div class="ui dropdown link item" id="forecast">
+            Forecast
+            <div class="menu" id="forecast-menu">
+              <div class="ui dropdown link item">
+                Next 24 hours
+                <div class="menu">
+                </div>
+              </div>
+              <div class="ui dropdown link item">
+                +1 Days 
+                <div class="menu">
+                </div>
+              </div>
+              <div class="ui dropdown link item">
+                +2 Days
+                <div class="menu">
+                </div>
+              </div>
+              <div class="ui dropdown link item">
+                +3 Days 
+                <div class="menu">
+                </div>
+              </div>
+              <div class="ui dropdown link item">
+                +4 Days 
+                <div class="menu">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ui icon fluid buttons">
+                <button class="ui button" id="new-window">
+                    <i class="lightbulb icon"></i>
+                </button>
+                <button class="ui button" id="power-button">
+                    <i class="power off icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Ambient Weather App",
+  "version": "0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "35",
+  "description": "Discover and control Yeelight LED",
+  "app": {
+    "background": {
+      "scripts": [
+        "js/MulticastSocket.js",
+        "js/ControlClient.js",
+        "js/background.js"]
+    }
+  },
+
+  "icons": {
+    "128": "128.png"
+  },
+
+  "permissions": [
+    "storage",
+    {
+      "socket": ["udp-send-to", "udp-bind", "udp-multicast-membership", "tcp-connect:*:*"]
+    }
+  ]
+}
