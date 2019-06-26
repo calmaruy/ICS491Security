@@ -4,7 +4,6 @@ var Collection = (function () {
     this._map = {};
     this.length = 0;
   }
-
   Collection.prototype.get = function (key) {
     if (this._map.hasOwnProperty(key)) {
       return this._array[this._map[key]].value;
